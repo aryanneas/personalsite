@@ -1,0 +1,178 @@
+@keyframes pisca {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+body {
+  font-family: 'Roboto-Regular', 'Open Sans', sans-serif;
+}
+
+ul {
+  line-height: 40px;
+}
+
+/*INTRODUCAO*/
+.introducao {
+  color: #fff;
+  text-align: center;
+}
+
+.introducao h1 {
+  font-size: 3.5em;
+}
+.introducao h2::after {
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca 0.5s infinite;
+}
+
+.bg-dark {
+  height: auto;
+  background-color: #000 !important;
+}
+
+.apresentacao {
+  padding: 10% 0;
+}
+
+.downloadCurriculo {
+  background-color: #f2015f;
+  border-radius: 25px;
+  padding: 15px 20px;
+  margin: 5% auto auto auto;
+  color: #fff;
+  border-color: #f2015f;
+}
+
+.downloadCurriculo:hover {
+  box-shadow: 0px 0px 18px 0px rgba(242, 1, 95, 1);
+  transition: all 0.5s ease-in-out;
+}
+
+.frontend {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+/*SOBRE MIM*/
+.minha-foto {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+}
+.aboutme .texto {
+  margin: auto;
+  text-align: justify;
+}
+
+.sobremim {
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+/*EXPERIENCIAS*/
+.experiencias h3 {
+  color: #f2015f;
+}
+
+.experiencias .texto {
+  line-height: 35px;
+}
+
+.experiencias-title {
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.link-desafio {
+  color: #f2015f;
+}
+
+.link-desafio:hover {
+  color: #f2015f;
+}
+
+/*SKILLS*/
+.skills {
+  color: #fff;
+}
+
+.skills p {
+  font-weight: bold;
+}
+
+.skills h2 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+/*CONTATO*/
+.contato h2 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 3%;
+}
+
+.contato-botao {
+  margin-bottom: 3%;
+}
+
+.email-contato {
+  background-color: #f2015f;
+  border-radius: 25px;
+  padding: 15px 20px;
+  color: #fff;
+  border-color: #f2015f;
+}
+
+.icons {
+  margin-bottom: 3%;
+}
+
+.icons a i {
+  color: #f2015f;
+  font-size: 30px;
+}
+
+.icons i {
+  margin: 10px;
+}
+
+/*FOOTER*/
+footer p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+/**RESPONSIVE**/
+
+/*EXPERIENCIAS*/
+@media only screen and (max-width: 800px) {
+  .hackathon {
+    margin-bottom: 10%;
+  }
+
+  .introducao h1 {
+    font-size: 2.5em;
+  }
+
+  .frontend {
+    font-size: 1.5em;
+  }
+
+  .aboutme h2 {
+    font-size: 1.5em;
+  }
+
+  .minha-foto {
+    width: 250px;
+    height: 250px;
+  }
+}
